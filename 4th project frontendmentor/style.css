@@ -1,0 +1,58 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding: 0;
+    background-color:hsl(0, 0%, 94%);
+    font-family: "Poppins", sans-serif;
+}
+#day{
+    width:100px;
+    height: 40px;
+    border-radius: 4px;
+}
+#month{
+    width:100px;
+    height: 40px;
+    border-radius: 4px;
+}
+#year{
+    width:100px;
+    height: 40px;
+    border-radius: 4px;
+}
+.lbls {
+    display: flex;
+    width: 100px;
+    margin: 0 -5px;
+  }
+  
+  label {
+   padding-left: 40px;
+  }
+.arrow{
+    background-color: rgb(128, 38, 128);
+    float: right;
+    border-radius: 40px;
+    padding: 10px;
+    margin-top: 0px;
+}
+hr{
+    width: 430px;
+    display: block;
+}
+#all{
+    border: 2px solid black;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px;
+}
+.grand{
+    font-size: 32px;
+    font-weight: 900;
+}
+span{
+    color: hsl(259, 100%, 65%);
+}
