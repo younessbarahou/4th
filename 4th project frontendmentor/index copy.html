@@ -18,33 +18,46 @@
 </head>
 <body>
 <div id="all">
-<div class="lbls">
-  <label for="day">DAY</label>
-  <label for="month">MONTH</label>
-  <label for="year">YEAR</label>
-</div>
 <div class="inpts">
-  <input class="inpt" type="text" placeholder="    DD" id="day">
-  
-
-  <input class="inpt" type="text" placeholder="    MM" id="month">
-  
-
-
-  <input class="inpt" type="text" placeholder="    YYYY" id="year">
+  <div class="cont1">
+  <label for="day">DAY</label><br>
+  <input class="inpt" type="text" placeholder="DD" id="day">
+  </div>
+  <div class="cont2">
+   <label for="month">MONTH</label><br>
+   <input  class="inpt" type="text" placeholder="MM" id="month">
+  </div>
+   <div class="cont3">
+   <label for="year">YEAR</label> <br>
+   <input class="inpt" type="text" placeholder="YYYY" id="year">
+   </div>
 </div>
-<br>
-      
   <img class="arrow" src="assets/images/icon-arrow.svg" />
   <hr />
+<div id="result">
  <i><p class="grand"><span>- - </span>years</p></i>
   <i><p class="grand"><span> - - </span> months</p></i>
   <i><p class="grand"><span>- -</span> days</p></i>
+</div>
   </div>
-  
+  <button onclick="day()">click</button>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Yb</a>.
   </div>
+  <script>
+    function day(){
+      let day = document.getElementById('day').value;
+      let a = /[1-31]/
+      if (a.test(day)){
+        alert(' eligible');
+        return true;
+      }
+      else{
+        alert('not eligible');
+        return false;
+      }
+  }
+  </script>
 </body>
 </html>
