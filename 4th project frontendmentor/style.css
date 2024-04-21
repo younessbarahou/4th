@@ -38,6 +38,9 @@ input:focus{
     outline-color:hsl(259, 100%, 65%);
     outline-width: 0.5px;
 }
+input:hover{
+    border-color:hsl(259, 100%, 65%);
+}
 input::placeholder{
     font-weight: 700;
     font-size: 20px;
@@ -61,7 +64,7 @@ hr{
     border-top:0px solid hsl(0, 0%, 86%);
     width: 400px;
     display: block;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 #all{
     position: relative;
@@ -82,9 +85,14 @@ hr{
     font-size: 58px;
     font-weight: 900;
 }
-span{
+p > span{
     color: hsl(259, 100%, 65%);
 }
 #result{
     margin-top: 20px;
+}
+#reqrd1,#reqrd2,#reqrd3{
+    font-size: 10px;
+    color: red;
+    display: none;
 }

@@ -20,17 +20,20 @@
 <div id="all">
 <div class="inpts">
   <div class="cont1">
-  <label for="day">DAY</label><br>
-  <input class="inpt" type="text" placeholder="DD" id="day">
+  <label for="day" id="lblday">DAY</label><br>
+  <input  autocomplete ="off"oninput="nempty0()"  class="inpt" type="text" placeholder="DD" id="day"><br>
+<i><span id ="reqrd1"class="reqrd">The field is required</span></i>
   </div>
   <div class="cont2">
-   <label for="month">MONTH</label><br>
-   <input  class="inpt" type="text" placeholder="MM" id="month">
+   <label id="lblmonth" for="month">MONTH</label><br>
+   <input autocomplete ="off" oninput="nempty1()" class="inpt" type="text" placeholder="MM" id="month"><br>
+   <i><span id ="reqrd2" class="reqrd">The field is required</span></i>
   </div>
    <div class="cont3">
-   <label for="year">YEAR</label> <br>
-   <input class="inpt" type="text" placeholder="YYYY" id="year">
-   </div>
+   <label id="lblyear" for="year">YEAR</label> <br>
+   <input  autocomplete ="off" oninput="nempty2()" class="inpt" type="text" placeholder="YYYY" id="year">
+   <br><i> <span id ="reqrd3" class="reqrd">The field is required</span></i>
+  </div>
 </div>
   <img class="arrow" src="assets/images/icon-arrow.svg" />
   <hr />
@@ -40,24 +43,15 @@
   <i><p class="grand"><span>- -</span> days</p></i>
 </div>
   </div>
-  <button onclick="day()">click</button>
+  <button onclick="empty(),date()">click</button>
+  
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Yb</a>.
+    Coded by <a href="#">Yb</a>
   </div>
-  <script>
-    function day(){
-      let day = document.getElementById('day').value;
-      let a = /[1-31]/
-      if (a.test(day)){
-        alert(' eligible');
-        return true;
-      }
-      else{
-        alert('not eligible');
-        return false;
-      }
-  }
+  <script src="index.js">
+  
   </script>
 </body>
 </html>
