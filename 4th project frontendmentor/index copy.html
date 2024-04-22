@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <title> Age calculator app</title>
+  <title> Age calculator app By youness barahou</title>
 
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -35,20 +35,19 @@
    <br><i> <span id ="reqrd3" class="reqrd">The field is required</span></i>
   </div>
 </div>
-  <img class="arrow" src="assets/images/icon-arrow.svg" />
+  <img onclick="empty(),date(),operation()" class="arrow" src="assets/images/icon-arrow.svg" />
   <hr />
 <div id="result">
- <i><p class="grand"><span>- - </span>years</p></i>
-  <i><p class="grand"><span> - - </span> months</p></i>
-  <i><p class="grand"><span>- -</span> days</p></i>
+ <i><p class="grand"><span id="yearfinal"> - - </span>years</p></i>
+  <i><p class="grand"><span id="monthfinal"> - - </span> months</p></i>
+  <i><p class="grand"><span id="dayfinal"> - - </span> days</p></i>
 </div>
   </div>
-  <button onclick="empty(),date()">click</button>
   
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Yb</a>
+    Coded with By <a href="#">Youness Barahou</a>
   </div>
   <script src="index.js">
   

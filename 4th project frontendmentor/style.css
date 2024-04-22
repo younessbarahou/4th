@@ -59,6 +59,11 @@ input::placeholder{
     padding: 16px;
     float: right;
     margin-right: 10px;
+    transition: 0s background-color; 
+}
+.arrow:hover{
+    background-color: black;
+    transition-duration: 1s;
 }
 hr{
     border-top:0px solid hsl(0, 0%, 86%);
@@ -95,4 +100,10 @@ p > span{
     font-size: 10px;
     color: red;
     display: none;
+}
+a{
+   text-decoration: none;
+}
+a:hover{
+    color: green;
 }
